@@ -1,0 +1,43 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin SectionHeadline {
+  font-family: AmazonEmberDisplay;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--light-purple);
+  margin-bottom: 2rem;
+}
+
+@mixin CopyText {
+  font-family: AmazonEmberDisplay;
+  font-size: 1.315rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.52;
+  letter-spacing: normal;
+  color: var(--dark);
+}
+@mixin SolutionsSub {
+  font-family: AmazonEmberDisplay;
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 0.89;
+  color: var(--pastel-purple);
+}
+
+@mixin FeaturesTitle {
+  font-family: AmazonEmberDisplay;
+  font-size: 2.25rem;
+  font-weight: 300;
+  line-height: 0.78;
+  letter-spacing: 0.36px;
+  color: var(--blue-purple);
+}

@@ -1,0 +1,35 @@
+@font-face {
+  font-family: AmazonEmberDisplay;
+  src: url("../../fonts/AmazonEmberDisplay_Rg.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: AmazonEmberDisplay;
+  src: url("../../fonts/AmazonEmberDisplay_Lt.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: AmazonEmberDisplay;
+  src: url("../../fonts/AmazonEmberDisplay_Bd.ttf");
+  font-weight: bold;
+}
+
+.header {
+  &__secondary {
+    @include SectionHeadline;
+  }
+}
+
+.pg {
+  @include CopyText;
+  margin-bottom: 2rem;
+}
+
+.txt {
+  &-purple {
+    color: var(--blue-purple);
+  }
+  &-white {
+    color: white;
+  }
+}

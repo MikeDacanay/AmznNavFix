@@ -1,0 +1,10 @@
+.intro {
+  &__section {
+    padding: 5rem 0;
+    background-color: var(--ice);
+  }
+
+  &__text {
+    @include CopyText;
+  }
+}

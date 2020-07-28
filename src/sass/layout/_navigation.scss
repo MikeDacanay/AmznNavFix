@@ -1,0 +1,85 @@
+.navigation {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: $aws-blue;
+  color: white;
+  padding-bottom: 1.5rem;
+  width: 100%;
+  overflow: hidden;
+  &__wrapper {
+    height: 13.4rem;
+    background-color: var(--ice);
+  }
+}
+
+.nav {
+  &__desc {
+    font-family: AmazonEmberDisplay;
+    font-size: 2.25rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--white);
+    margin-right: 3rem;
+    width: 22rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+
+  &__container {
+    margin-right: 2.5rem;
+  }
+  &__title {
+    font-family: AmazonEmberDisplay;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2;
+    text-align: left;
+    letter-spacing: normal;
+    color: var(--light-grey-blue);
+  }
+  &__sub {
+    list-style: none;
+    max-height: 20rem;
+    transition: all 750ms;
+  }
+  &__item {
+    font-family: AmazonEmberDisplay;
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 2;
+    letter-spacing: -0.02px;
+    text-align: left;
+    color: var(--duck-egg-blue);
+
+    &.active{
+      color: yellow;
+    }
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-left: 0.5rem solid var(--light-purple);
+  z-index: 100;
+  // width: 100%;
+}
+
+// .sticky .nav {
+//   &__title {
+//   }
+//   &__sub {
+//     max-height: 0;
+//     visibility: hidden;
+//     opacity: 0;
+//   }
+// }
